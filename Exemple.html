@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exempte</title>
+    <style>
+      .maclasse {
+        width: 200px;
+        height: 60px;
+        background-color: #ee6600;
+        margin: 10px;
+        padding: 10px;
+        font: 14pt verdana;
+        color: #ffffff;
+      }
+    </style>
+    <script language="javascript">
+      function ajouter() {
+        baliseDiv = document.createElement("div");
+        baliseDiv.className = "maclasse";
+        message = document.createTextNode("Bonjour a tous.");
+        baliseDiv.appendChild(message);
+        document
+          .getElementById("madiv")
+          .insertBefore(baliseDiv, document.getElementById("monimage"));
+      }
+    </script>
+  </head>
+  <body onload="decoup()">
+    <input type="button" value="Inserer une DIV" onclick="ajouter()" />
+    <div id="madiv">
+      <img src="Javascriptp_logo1.png" id="monimage" />
+    </div>
+  </body>
+  <body></body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemple 2</title>
+  </head>
+  <script language="javascript">
+    function f() {
+      var tab = document.getElementsByTagName("input");
+      var result = "";
+      for (i = 0; i < tab.length; i++) {
+        result = result + " " + tab[i].value;
+      }
+      document.form1.result.value = result;
+    }
+  </script>
+  <body>
+    <form name="form1">
+      <input type="text" name="1" value /> <br />
+      <input type="text" name="2" value /> <br />
+      <input type="text" name="3" value /> <br />
+      <input type="text" name="4" value /> <br />
+      <input type="text" name="5" value /> <br />
+      <input type="button" value="click!" name="click" onclick="f()" /><br />
+      <textarea name="result" cols="40" rows="4"></textarea>
+    </form>
+  </body>
+</html>
