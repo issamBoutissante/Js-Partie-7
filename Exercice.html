@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercice</title>
+  </head>
+  <body>
+    <form>
+      un Exemple de Text
+      <center>
+        <input type="text" id="textColor" />
+        <input
+          type="button"
+          onclick="changerClolorDeText()"
+          value="Changer Text Color"
+        />
+        <br />
+        <input type="text" id="fontColor" />
+        <input
+          type="button"
+          onclick="changerColorDeFont()"
+          value="Changer Font Color"
+        />
+      </center>
+    </form>
+  </body>
+  <script>
+    var textColor = document.getElementById("textColor");
+    var fontColor = document.getElementById("fontColor");
+    function changerClolorDeText() {
+      document.body.style.setProperty("color", textColor.value);
+    }
+    function changerColorDeFont() {
+      document.body.style.setProperty("background-color", fontColor.value);
+    }
+  </script>
+</html>
